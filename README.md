@@ -4,6 +4,7 @@
 Here is my portfolio which i did it right after my graduation from Udacity as a Front-End Web Developer.
 At this portfolio i used some of my new skills which i gained during my studying journey at "Front-End Web Developer Nanodegree" program, which they are:
 - Full responsive with any possible screen width
+- MVO javascript pattern (separation of concerns)
 - [Javascript, ES5 & ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3)
