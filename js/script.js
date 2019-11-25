@@ -13,9 +13,9 @@ const model = {
 
     allProjects : [
     	{
-    		name: `My first portfolio`,
-    		img: `firstPortfolio.png`,
-    		url: `https://danny-mousa.github.io/portfolio/`,
+    		name: `My final portfolio`,
+    		img: `cover_bg_1.jpg`,
+    		url: `https://danny-mousa.github.io/myFinalPortfolio/index.html`,
     		fadeIn: `fadeInUp`
     	},
 
@@ -59,6 +59,13 @@ const model = {
     		img: `port.png`,
     		url: `https://danny-mousa.github.io/my-first-project/`,
     		fadeIn: `fadeInLeft`
+    	},
+
+    	{
+    		name: `My first portfolio`,
+    		img: `firstPortfolio.png`,
+    		url: `https://danny-mousa.github.io/portfolio/`,
+    		fadeIn: `fadeInRight`
     	}
     ],
 
