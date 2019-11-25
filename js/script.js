@@ -15,7 +15,7 @@ const model = {
     	{
     		name: `My final portfolio`,
     		img: `cover_bg_1.jpg`,
-    		url: `https://github.com/Danny-Mousa/myFinalPortfolio`,
+    		url: `https://github.com/Danny-Mousa/myFinalPortfolio.git`,
     		fadeIn: `fadeInUp`
     	},
 
