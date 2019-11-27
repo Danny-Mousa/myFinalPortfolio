@@ -23,7 +23,11 @@ const animation = {
 
 	countToFunc: function () {
 
-		$(".runCount").countTo();
+		$(".runCount").countTo({
+			 formatter: function (value, options) {
+	      return value.toFixed(options.decimals);
+	    },
+		});
 	},
 
 	waypointFuncs: function () {
