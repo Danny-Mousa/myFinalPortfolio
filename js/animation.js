@@ -23,7 +23,7 @@ const animation = {
 
 	countToFunc: function () {
 
-		$(".runCount").countTo({
+		$(".runCount").last().countTo({
 			 formatter: function (value, options) {
 	      return value.toFixed(options.decimals);
 	    },
