@@ -87,7 +87,7 @@ const animation = {
 
 		$(".counter").waypoint( function(direction){
 
-			if(direction === "down") {
+			if(direction === "down" && !$(this.element).hasClass("runCount") ) {
 				
 				$(this.element).addClass("runCount");
 				animation.countToFunc();

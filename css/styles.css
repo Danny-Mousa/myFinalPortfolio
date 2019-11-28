@@ -1346,6 +1346,50 @@ strong {
 		width: 35px;
         height: 35px;
 	}
+
+	@keyframes fadeInLeftLong {
+		0% {
+		    opacity: 0;
+		    transform: translate3d(-55px, 0, 0);
+		}
+		100% {
+		    opacity: 1;
+		    transform: none;
+		}
+	}
+
+	@keyframes fadeInRightLong {
+		0% {
+		    opacity: 0;
+		    transform: translate3d(55px,0,0);
+		}
+		100% {
+		    opacity: 1;
+		    transform: none;
+		}
+	}
+
+	@keyframes fadeInRight {
+		0% {
+		    opacity: 0;
+		    transform: translate3d(50px,0,0);
+		}
+		100% {
+		    opacity: 1;
+		    transform: none;
+		}
+	}
+
+	@keyframes fadeInLeft {
+		0% {
+		    opacity: 0;
+		    transform: translate3d(-50px,0,0);
+		}
+		100% {
+		    opacity: 1;
+		    transform: none;
+		}
+	}
 }
 
 
