@@ -14,56 +14,56 @@ $( function(){
 	    	{
 	    		name: `My final portfolio`,
 	    		img: `cover_bg_1.jpg`,
-	    		//url: `https://github.com/Danny-Mousa/myFinalPortfolio.git`,
+	    		url: `https://github.com/Danny-Mousa/myFinalPortfolio.git`,
 	    		fadeIn: `fadeInUp`
 	    	},
 
 	    	{
 	    		name: `Memory Game`,
 	    		img: `matching-game.png`,
-	    		//url: `https://github.com/Danny-Mousa/Memory-Game`,
+	    		url: `https://github.com/Danny-Mousa/Memory-Game`,
 	    		fadeIn: `fadeInUp`
 	    	},
 
 	    	{
 	    		name: `Classic Arcade Game Clone`,
 	    		img: `gameBoard.png`,
-	    		//url: `https://github.com/Danny-Mousa/arcadeProject`,
+	    		url: `https://github.com/Danny-Mousa/arcadeProject`,
 	    		fadeIn: `fadeInUp`
 	    	},
 
 	    	{
 	    		name: `Feed Reader Testing with JASMINE`,
 	    		img: `jasmine.jpg`,
-	    		//url: `https://github.com/Danny-Mousa/feed-reader-RSS`,
+	    		url: `https://github.com/Danny-Mousa/feed-reader-RSS`,
 	    		fadeIn: `fadeInRight`
 	    	},
 
 	    	{
 	    		name: `Restaurant Reviews App`,
 	    		img: `restMain.jpg`,
-	    		//url: `https://github.com/Danny-Mousa/rest-rev-stg1`,
+	    		url: `https://github.com/Danny-Mousa/rest-rev-stg1`,
 	    		fadeIn: `fadeInLeft`
 	    	},
 
 	    	{
 	    		name: `Pixel Art Maker`,
 	    		img: `picker.png`,
-	    		//url: `https://danny-mousa.github.io/pixel-art-maker/index.html`,
+	    		url: `https://danny-mousa.github.io/pixel-art-maker/index.html`,
 	    		fadeIn: `fadeInRight`
 	    	},
 
 	    	{
 	    		name: `Random Practicing Project`,
 	    		img: `port.png`,
-	    		//url: `https://danny-mousa.github.io/my-first-project/`,
+	    		url: `https://danny-mousa.github.io/my-first-project/`,
 	    		fadeIn: `fadeInLeft`
 	    	},
 
 	    	{
 	    		name: `My first portfolio`,
 	    		img: `firstPortfolio.png`,
-	    		//url: `https://danny-mousa.github.io/portfolio/`,
+	    		url: `https://danny-mousa.github.io/portfolio/`,
 	    		fadeIn: `fadeInRight`
 	    	}
 	    ],
