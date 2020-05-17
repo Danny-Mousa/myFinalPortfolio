@@ -13,7 +13,7 @@ $( function(){
 	    allProjects : [
 	    	{
 	    		name: `My final portfolio`,
-	    		img: `cover_bg_1.jpg`,
+	    		img: `finalPortFolio.jpg`,
 	    		url: `https://github.com/Danny-Mousa/myFinalPortfolio.git`,
 	    		fadeIn: `fadeInUp`
 	    	},
