@@ -20,16 +20,16 @@ $( function(){
 
 	    	{
 	    		name: `Memory Game`,
-	    		img: `matching-game.png`,
+	    		img: `matching-game.jpg`,
 	    		url: `https://github.com/Danny-Mousa/Memory-Game`,
 	    		fadeIn: `fadeInUp`
 	    	},
 
 	    	{
 	    		name: `Classic Arcade Game Clone`,
-	    		img: `gameBoard.png`,
+	    		img: `gameBoard.jpg`,
 	    		url: `https://github.com/Danny-Mousa/arcadeProject`,
-	    		fadeIn: `fadeInUp`
+	    		fadeIn: `fadeInLeft`
 	    	},
 
 	    	{
@@ -43,28 +43,7 @@ $( function(){
 	    		name: `Restaurant Reviews App`,
 	    		img: `restMain.jpg`,
 	    		url: `https://github.com/Danny-Mousa/rest-rev-stg1`,
-	    		fadeIn: `fadeInLeft`
-	    	},
-
-	    	{
-	    		name: `Pixel Art Maker`,
-	    		img: `picker.png`,
-	    		url: `https://danny-mousa.github.io/pixel-art-maker/index.html`,
-	    		fadeIn: `fadeInRight`
-	    	},
-
-	    	{
-	    		name: `Random Practicing Project`,
-	    		img: `port.png`,
-	    		url: `https://danny-mousa.github.io/my-first-project/`,
-	    		fadeIn: `fadeInLeft`
-	    	},
-
-	    	{
-	    		name: `My first portfolio`,
-	    		img: `firstPortfolio.png`,
-	    		url: `https://danny-mousa.github.io/portfolio/`,
-	    		fadeIn: `fadeInRight`
+	    		fadeIn: `fadeInUp`
 	    	}
 	    ],
 
@@ -72,9 +51,9 @@ $( function(){
 
 	    	{
 	    		uTestimonial: `
-				    		- You show a great mindset for a good programmer, all respect <span class="fas fa-grin-wink"></span><br>
+				    		- You show a great mindset for a good programmer, all respect <span class="smile">😉</span><br>
 				    		- You have done great work with your game and show great understand of JavaScript and DOM.<br>
-				            - Your game meets all the specs and above <span class="fas fa-rocket"></span><span class="fas fa-rocket"></span><span class="fas fa-rocket"></span><br>
+				            - Your game meets all the specs and above <span class="rocket">🚀🚀🚀</span><br>
 				            - Can not wait to see your next submissoin.`,
 
 				projectName: `Memory Game`

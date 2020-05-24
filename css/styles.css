@@ -430,7 +430,7 @@ section.about {
 }
 
 p.certificate {
-	margin-top: -20px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -947,17 +947,17 @@ hr {
 	color: #222222;
 }
 
-span.fa-quote-left {
-	font-size: 45px;
+span.quote-left {
+	font-size: 60px;
     position: absolute;
     top:5px;
 	left: 40px;
 }
 
-span.fa-quote-right {
-	font-size: 45px;
+span.quote-right {
+	font-size: 60px;
 	position: absolute;
-    bottom: 5px;
+    bottom: -22px;
     right: 40px;
 }
 
@@ -977,14 +977,15 @@ strong {
 	font-size: 30px;
 }
 
-.fa-rocket {
+.rocket {
 	color: #e6c300;
-	font-size: 17px;
+	font-size: 1.5em;
 }
 
-.fa-grin-wink {
-	color: #990000;
-    font-size: 17px;
+.smile {
+	color: #000;
+    font-size: 19px;
+    font-style: normal;
 }
 
 /********** CONTACT PAGE *********/
@@ -1034,6 +1035,8 @@ strong {
 .detailedInfo span {
 	color: #737373;
 	margin-right: 15px;
+	font-style: normal;
+    font-size: 28px;
 }
 
 .detailedInfo p:nth-child(1) {
@@ -1041,8 +1044,12 @@ strong {
 }
 
 .detailedInfo p {
-	margin-bottom: 15px;
 	font-style: italic;
+}
+
+
+address p:nth-child(2) span {
+	margin-left: -6px;
 }
 
 
@@ -1061,6 +1068,13 @@ strong {
     height: 100%;
     border-radius: 20px;
     box-shadow: 0 0 10px 5px rgba(166, 166, 166,0.8);
+}
+
+.arrow-up {
+	display: inline-block;
+    position: relative;
+    bottom: 1px;
+	font-size: 2em;
 }
 
 /*********** FOOTER STYLES ***********/
@@ -1190,7 +1204,7 @@ strong {
 
 	.detailedInfo {
 		text-align: left;
-	    width: 280px;
+	    width: 290px;
 	    margin-left: auto;
 	    margin-right: auto;
 	    margin-bottom: 40px;
@@ -1398,6 +1412,10 @@ strong {
 		font-size: 6vw;
 	}
 
+	.arrow-up {
+		font-size: 1.5em;
+	}
+
 	.about h1+ div {
     	width: 95%;
 	}
@@ -1456,6 +1474,10 @@ strong {
 		right: 5px;
 		width: 35px;
         height: 35px;
+	}
+
+	.detailedInfo span {
+		margin-right: unset;
 	}
 
 	@keyframes fadeInLeftLong {
