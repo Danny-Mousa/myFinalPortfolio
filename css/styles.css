@@ -9,6 +9,9 @@ html {
 
 body {
 	background: #f9f9ff;
+	max-width: 1355px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 body::-webkit-scrollbar {
@@ -30,8 +33,6 @@ body::-webkit-scrollbar-thumb {
 nav.navbar-default {
 	position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     background-color: transparent;
     height: 60px;
     width: 100%;
