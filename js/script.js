@@ -11,13 +11,25 @@ $( function(){
 	        In short, i'm a student forever.`,
 
 	    allProjects : [
+
+	    	{
+	    		name: `Netflix Clone`,
+	    		img: `netflix.jpg`,
+	    		url: `https://danny-mousa.github.io/Netflix-Clone/`,
+	    		fadeIn: `fadeInLeft`
+	    	},
 	    	{
 	    		name: `My final portfolio`,
 	    		img: `finalPortFolio.jpg`,
 	    		url: `https://github.com/Danny-Mousa/myFinalPortfolio.git`,
 	    		fadeIn: `fadeInUp`
 	    	},
-
+	    	{
+	    		name: `To Do App with Calender`,
+	    		img: `to-do.jpg`,
+	    		url: `https://danny-mousa.github.io/ToDoListCalendar/`,
+	    		fadeIn: `fadeInLeft`
+	    	},
 	    	{
 	    		name: `Memory Game`,
 	    		img: `matching-game.jpg`,
