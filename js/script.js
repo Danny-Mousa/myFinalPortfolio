@@ -3,59 +3,87 @@ $( function(){
 
 	const model = {
 
-		seeMore : `I am an active and very ambitious person, dedicated to my work, I give the work all my time, effort and focus, and above all, I LOVE programming and anything related to deep thinking and solving difficult problems<br><br>
-	        Officially, i'm a communications and electronics engineer.
-	        But i would like to introduce myself as a Front-End web developer, because coding is my passion in the life.<br><br>
-	        My journey with coding started when i participated in the initiative of the Million Arab Coders which was provided by the Dubai Future Foundation, and after the initial stage and among one million arab coders, i was one of the top 1000, who won the scolarship with Udacity in order to master the front-end development field with a strong in depth knowledge about this amazing field, by taking the course of "Front-End Web Developer Nanodegree".<br><br>
-	        My journey in coding will not stop here, because in the near future, i'll enter the arena that i love most, which is "Artificial intelligence".<br><br>
-	        In short, i'm a student forever.`,
+		seeMore : `I am an active and very ambitious person, dedicated to my work, I give the work all my time, effort and focus, and on top of that, I LOVE programming and everything related to deep thinking and solving difficult problems.<br><br>
+	        Officially, I'm a communications and electronics engineer.
+	        But I would like to introduce myself as a Front-End web developer, because coding is my passion in the life.<br><br>
+	        My journey with coding started when I participated in the initiative of the Million Arab Coders which was provided by the Dubai Future Foundation, and after the initial stage and among one million arab coders, I was one of the top 1000, who won the scolarship with Udacity in order to master the front-end development field with a strong in depth knowledge about this amazing field, by taking the course of "Front-End Web Developer Nanodegree".<br><br>
+	        My journey in coding will not stop here, because in the near future, I'll enter the arena that I love most, which is "Artificial intelligence".<br><br>
+	        In short, I'm a lifelong learner.`,
 
 	    allProjects : [
 
 	    	{
-	    		name: `Netflix Clone`,
+				name: `RAK Chamber`,
+				year: `2021`,
+	    		img: `rak.jpg`,
+	    		url: `https://rakchamber-test.ae/home`,
+	    		fadeIn: `fadeInLeft`
+			},
+	    	{
+				name: `RAK Exhibition Center`,
+				year: `2021`,
+	    		img: `rakex.jpg`,
+	    		url: `https://rakexpoevents.ae/en/home`,
+	    		fadeIn: `fadeInRight`
+			},
+	    	{
+				name: `Emirates Policy Center`,
+				year: `2021`,
+	    		img: `epc.jpg`,
+	    		url: `https://epc.ae/en/home`,
+	    		fadeIn: `fadeInLeft`
+			},
+	    	{
+				name: `Netflix Clone`,
+				year: `2020`,
 	    		img: `netflix.jpg`,
 	    		url: `https://danny-mousa.github.io/Netflix-Clone/`,
-	    		fadeIn: `fadeInLeft`
+	    		fadeIn: `fadeInUp`
+			},
+			{
+	    		name: `To Do App with Calender`,
+				year: `2020`,
+	    		img: `to-do.jpg`,
+	    		url: `https://danny-mousa.github.io/ToDoListCalendar/`,
+	    		fadeIn: `fadeInUp`
 	    	},
 	    	{
-	    		name: `My final portfolio`,
+				name: `My final portfolio`,
+				year: `2019`,
 	    		img: `finalPortFolio.jpg`,
 	    		url: `https://github.com/Danny-Mousa/myFinalPortfolio.git`,
 	    		fadeIn: `fadeInUp`
 	    	},
 	    	{
-	    		name: `To Do App with Calender`,
-	    		img: `to-do.jpg`,
-	    		url: `https://danny-mousa.github.io/ToDoListCalendar/`,
-	    		fadeIn: `fadeInLeft`
-	    	},
-	    	{
 	    		name: `Memory Game`,
+				year: `2019`,
 	    		img: `matching-game.jpg`,
 	    		url: `https://github.com/Danny-Mousa/Memory-Game`,
-	    		fadeIn: `fadeInUp`
+	    		fadeIn: `fadeInLeft`
 	    	},
 
 	    	{
 	    		name: `Classic Arcade Game Clone`,
+				year: `2019`,
 	    		img: `gameBoard.jpg`,
 	    		url: `https://github.com/Danny-Mousa/arcadeProject`,
-	    		fadeIn: `fadeInLeft`
-	    	},
-
-	    	{
-	    		name: `Feed Reader Testing with JASMINE`,
-	    		img: `jasmine.jpg`,
-	    		url: `https://github.com/Danny-Mousa/feed-reader-RSS`,
 	    		fadeIn: `fadeInRight`
 	    	},
 
 	    	{
+	    		name: `Testing with JASMINE`,
+				year: `2019`,
+	    		img: `jasmine.jpg`,
+	    		url: `https://github.com/Danny-Mousa/feed-reader-RSS`,
+	    		fadeIn: `fadeInUp`
+	    	},
+
+	    	{
 	    		name: `Restaurant Reviews App`,
+				year: `2019`,
 	    		img: `restMain.jpg`,
 	    		url: `https://github.com/Danny-Mousa/rest-rev-stg1`,
-	    		fadeIn: `fadeInUp`
+	    		fadeIn: `fadeInRight`
 	    	}
 	    ],
 
@@ -210,12 +238,10 @@ $( function(){
 
 				let project= document.createElement("div");
 				
-				project.classList.add("project");
-				project.classList.add("col-md-6");
-				project.classList.add("animated");
+				project.classList.add("project", "col-md-6", "animated");
 				project.setAttribute("data-animation", this.projects[i].fadeIn);
 				
-				project.innerHTML=`<h3 class="project-name">${this.projects[i].name}</h3>
+				project.innerHTML=`<h3 class="project-name">${this.projects[i].name} <span class="project-year">${this.projects[i].year}</span> </h3>
 								   <img src="img/${this.projects[i].img}" alt="${this.projects[i].name}" class="img-responsive">
 								   <a href="${this.projects[i].url}" class="hide" target="_blank"> SHOW DETAILS <span class="fas fa-chevron-circle-right"></span></a>`;		   
 			    
