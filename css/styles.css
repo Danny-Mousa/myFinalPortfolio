@@ -253,7 +253,7 @@ nav.navbar-default.dark {
     text-decoration: none;
     height: 30px;
     border-radius: 20px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 
@@ -269,7 +269,8 @@ nav.navbar-default.dark {
 
 .homeBtn a:nth-child(1) {
 	background-color: #8c8c8c;
-	padding-top: 5px;
+	padding-top: 3px;
+    border: 2px solid transparent;
 }
 
 
@@ -284,7 +285,7 @@ nav.navbar-default.dark {
 	box-shadow: 0 0 8px 3px rgba(0,0,0,08);
 	color: #000;
 	font-weight: bold;
-	border: 1px solid #000;
+	border: 2px solid #000;
 	background-color: transparent;
 }
 
@@ -446,7 +447,6 @@ p.certificate {
     height: 30px;
     color: #fff;
     margin-top: 20px;
-    text-transform: uppercase;
     padding: 1px 15px;
     transition-duration: 800ms;
     box-shadow:  0 0 8px 3px rgba(179, 179, 179, 0.9);
@@ -779,7 +779,6 @@ hr {
 
 .fadeInUp {
 	animation: fadeInUp 1.5s ease-out both;
-	animation-duration: ;
 }
 
 @keyframes fadeInUp {
@@ -1080,7 +1079,6 @@ address p:nth-child(2) span {
 .arrow-up {
 	display: inline-block;
     position: relative;
-    bottom: 1px;
 	font-size: 2em;
 }
 
