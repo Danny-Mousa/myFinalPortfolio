@@ -9,28 +9,32 @@ $(function () {
 
     allProjects: [
       {
-        name: `RAK Chamber`,
-        year: `2021`,
-        img: `rak.jpg`,
-        url: `https://rakchamber-test.ae/home`,
-        fadeIn: `fadeInLeft`,
-      },
-      {
-        name: `RAK Exhibition Center`,
-        year: `2021`,
-        img: `rakex.jpg`,
-        url: `https://rakexpoevents.ae/en/home`,
-        fadeIn: `fadeInRight`,
-      },
-      {
         name: `Emirates Policy Center`,
+        ready: true,
         year: `2021`,
         img: `epc.jpg`,
         url: `https://epc.ae/en/home`,
         fadeIn: `fadeInLeft`,
       },
       {
+        name: `RAK Exhibition Center`,
+        ready: false,
+        year: `2021`,
+        img: `rakex.jpg`,
+        url: `https://rakexpoevents.ae/en/home`,
+        fadeIn: `fadeInRight`,
+      },
+      {
+        name: `RAK Chamber`,
+        ready: false,
+        year: `2021`,
+        img: `rak.jpg`,
+        url: `https://rakchamber-test.ae/home`,
+        fadeIn: `fadeInLeft`,
+      },
+      {
         name: `Netflix Clone`,
+        ready: true,
         year: `2020`,
         img: `netflix.jpg`,
         url: `https://danny-mousa.github.io/Netflix-Clone/`,
@@ -38,6 +42,7 @@ $(function () {
       },
       {
         name: `To Do App with Calender`,
+        ready: true,
         year: `2020`,
         img: `to-do.jpg`,
         url: `https://danny-mousa.github.io/ToDoListCalendar/`,
@@ -45,6 +50,7 @@ $(function () {
       },
       {
         name: `My final portfolio`,
+        ready: true,
         year: `2019`,
         img: `finalPortFolio.jpg`,
         url: `https://github.com/Danny-Mousa/myFinalPortfolio.git`,
@@ -52,6 +58,7 @@ $(function () {
       },
       {
         name: `Memory Game`,
+        ready: true,
         year: `2019`,
         img: `matching-game.jpg`,
         url: `https://github.com/Danny-Mousa/Memory-Game`,
@@ -60,6 +67,7 @@ $(function () {
 
       {
         name: `Classic Arcade Game Clone`,
+        ready: true,
         year: `2019`,
         img: `gameBoard.jpg`,
         url: `https://github.com/Danny-Mousa/arcadeProject`,
@@ -68,6 +76,7 @@ $(function () {
 
       {
         name: `Testing with JASMINE`,
+        ready: true,
         year: `2019`,
         img: `jasmine.jpg`,
         url: `https://github.com/Danny-Mousa/feed-reader-RSS`,
@@ -76,6 +85,7 @@ $(function () {
 
       {
         name: `Restaurant Reviews App`,
+        ready: true,
         year: `2019`,
         img: `restMain.jpg`,
         url: `https://github.com/Danny-Mousa/rest-rev-stg1`,
@@ -213,12 +223,32 @@ $(function () {
       for (i = 0; i < this.length; i++) {
         let project = document.createElement("div");
 
-        project.classList.add("project", "col-md-6", "animated");
+        project.classList.add(
+          "project",
+          "col-md-6",
+          "animated",
+          `${this.projects[i].ready ? "ready" : "not-ready"}`
+        );
         project.setAttribute("data-animation", this.projects[i].fadeIn);
 
-        project.innerHTML = `<h3 class="project-name">${this.projects[i].name} <span class="project-year">${this.projects[i].year}</span> </h3>
-								   <img src="img/${this.projects[i].img}" alt="${this.projects[i].name}" class="img-responsive">
-								   <a href="${this.projects[i].url}" class="hide" target="_blank"> SHOW DETAILS <span class="fas fa-chevron-circle-right"></span></a>`;
+        project.innerHTML = `<h3 class="project-name">${
+          this.projects[i].name
+        } <span class="project-year">${this.projects[i].year}</span> </h3>
+                   <img src="img/${this.projects[i].img}" alt="${
+          this.projects[i].name
+        }" class="img-responsive">
+                   ${
+                     this.projects[i].ready
+                       ? `<a
+                         href=${this.projects[i].url}
+                         class="hide"
+                         target="_blank"
+                       >
+                         Show Details
+                         <span class="fas fa-chevron-circle-right"></span>
+                       </a>`
+                       : `<a class="hide soon disabled">will be online soon</a>`
+                   }`;
 
         this.fragment.appendChild(project);
       }
