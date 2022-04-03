@@ -169,6 +169,7 @@ $(function () {
       myWorkView.init();
       testimonialsView.init();
       factsView.init();
+      copyRightYearView.init();
     },
 
     getMoreDetails: function () {
@@ -329,6 +330,21 @@ $(function () {
       }
 
       this.imgCounters.appendChild(this.fragment);
+    },
+  };
+
+  const copyRightYearView = {
+    init: function () {
+      this.copyElement = document.querySelector(".copyright");
+
+      this.render();
+    },
+
+    render: function () {
+      const fullDate = new Date();
+      const year = fullDate.getFullYear();
+
+      this.copyElement.innerHTML = `&copy; ${year} designed by me`;
     },
   };
 
