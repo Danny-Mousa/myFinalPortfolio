@@ -34,6 +34,7 @@ nav.navbar-default {
   background-color: transparent;
   height: 60px;
   width: 100%;
+  max-width: 1355px;
   z-index: 1000;
   border: 0;
   border-radius: 0;
@@ -296,7 +297,7 @@ section.about {
 }
 
 .about h1 + div {
-  width: 75%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }

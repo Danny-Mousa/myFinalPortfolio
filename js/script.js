@@ -1,11 +1,19 @@
 $(function () {
   const model = {
-    seeMore: `I am an active and very ambitious person, dedicated to my work, I give the work all my time, effort and focus, and on top of that, I LOVE programming and everything related to deep thinking and solving difficult problems.<br><br>
-	        Officially, I'm a communications and electronics engineer.
-	        But I would like to introduce myself as a Front-End web developer, because coding is my passion in the life.<br><br>
-	        My journey with coding started when I participated in the initiative of the Million Arab Coders which was provided by the Dubai Future Foundation, and after the initial stage and among one million arab coders, I was one of the top 1000, who won the scolarship with Udacity in order to master the front-end development field with a strong in depth knowledge about this amazing field, by taking the course of "Front-End Web Developer Nanodegree".<br><br>
-	        My journey in coding will not stop here, because in the near future, I'll enter the arena that I love most, which is "Artificial intelligence".<br><br>
-	        In short, I'm a lifelong learner.`,
+    seeMore: `5+ years of experience building scalable web applications using React.js, TypeScript, Next.js, and Redux , with a focus on delivering high-performance, user-centric solutions for international clients. Recognized for:<br /><br /><br />
+
+<b>- Performance Optimization:</b> Reduced load times by 99.2% and memory usage by 30% through code splitting, dynamic imports, and AbortController implementation (e.g., Mercato web app).<br /><br />
+
+<b>- Technical Leadership:</b> Spearheaded a custom survey generator and real-time SignalR chat service, boosting client satisfaction by 30% , and led teams to deliver 99% functionality-compliant platforms (e.g., Russail & IBS).<br /><br />
+
+<b>- Code Quality & Innovation:</b> Refactored legacy systems to modern best practices, eliminating redundant packages by manually rebuilding their functionality, and enabling garbage collection to clear 20% more unused data , while resolving 15+ critical bugs.<br /><br />
+
+<b>- Awards & Recognition:</b><br /><br />
+
+ <b>+</b> Top 1,000 Coder (out of 1M+ participants) via Udacity’s Dubai Future Foundation scholarship.<br />
+ <b>+</b> Consistently praised as a go-to problem solver , resolving 100% of escalated bugs and technical challenges.<br /><br />
+
+<b>- Continuous Learner:</b> Stay ahead of industry trends by mastering updates in JavaScript, React, and Next.js ecosystems. Passionate about leveraging cutting-edge tools to drive efficiency and innovation.`,
 
     allProjects: [
       {
@@ -18,43 +26,45 @@ $(function () {
       },
       {
         name: `RAK Exhibition Center`,
-        ready: false,
+        ready: true,
         year: `2021`,
         img: `rakex.jpg`,
-        url: `https://rakexpoevents.ae/en/home`,
+        url: `https://www.rakexpo.ae/en/home`,
         fadeIn: `fadeInRight`,
       },
       {
         name: `RAK Chamber`,
-        ready: false,
+        ready: true,
         year: `2021`,
         img: `rak.jpg`,
-        url: `https://rakchamber-test.ae/home`,
+        url: `https://www.rakchamber.ae/en/home`,
         fadeIn: `fadeInLeft`,
       },
       {
-        name: `Netflix Clone`,
+        name: `Russail Water`,
         ready: true,
-        year: `2020`,
+        year: `2022`,
         img: `netflix.jpg`,
-        url: `https://danny-mousa.github.io/Netflix-Clone/`,
-        fadeIn: `fadeInUp`,
+        url: `https://russailwater.ae/`,
+        fadeIn: `fadeInRight`,
       },
       {
-        name: `To Do App with Calender`,
+        name: `Stiftung IBS`,
         ready: true,
-        year: `2020`,
+        year: `2022`,
         img: `to-do.jpg`,
-        url: `https://danny-mousa.github.io/ToDoListCalendar/`,
-        fadeIn: `fadeInUp`,
+        url: `https://www.ibs-laubusch.de/`,
+        fadeIn: `fadeInLeft`,
       },
       {
-        name: `My final portfolio`,
+        name: `Saas & B2B web apps`,
         ready: true,
-        year: `2019`,
-        img: `finalPortFolio.jpg`,
-        url: `https://github.com/Danny-Mousa/myFinalPortfolio.git`,
-        fadeIn: `fadeInUp`,
+        year: `2022 to 2025`,
+        img: `dashboard.jpg`,
+        url: ``,
+        fadeIn: `fadeInRight`,
+        btnTitle: "Private web apps",
+        disableBtn: true,
       },
       {
         name: `Memory Game`,
@@ -64,31 +74,12 @@ $(function () {
         url: `https://github.com/Danny-Mousa/Memory-Game`,
         fadeIn: `fadeInLeft`,
       },
-
       {
         name: `Classic Arcade Game Clone`,
         ready: true,
         year: `2019`,
         img: `gameBoard.jpg`,
         url: `https://github.com/Danny-Mousa/arcadeProject`,
-        fadeIn: `fadeInRight`,
-      },
-
-      {
-        name: `Testing with JASMINE`,
-        ready: true,
-        year: `2019`,
-        img: `jasmine.jpg`,
-        url: `https://github.com/Danny-Mousa/feed-reader-RSS`,
-        fadeIn: `fadeInUp`,
-      },
-
-      {
-        name: `Restaurant Reviews App`,
-        ready: true,
-        year: `2019`,
-        img: `restMain.jpg`,
-        url: `https://github.com/Danny-Mousa/rest-rev-stg1`,
         fadeIn: `fadeInRight`,
       },
     ],
@@ -239,16 +230,18 @@ $(function () {
           this.projects[i].name
         }" class="img-responsive">
                    ${
-                     this.projects[i].ready
+                     this.projects[i].ready && !this.projects[i].disableBtn
                        ? `<a
                          href=${this.projects[i].url}
                          class="hide"
                          target="_blank"
                        >
-                         Show Details
+                         ${this.projects[i].btnTitle ?? "Show Details"}
                          <span class="fas fa-chevron-circle-right"></span>
                        </a>`
-                       : `<a class="hide soon disabled">will be online soon</a>`
+                       : `<a class="hide soon disabled">${
+                           this.projects[i].btnTitle ?? "will be online soon"
+                         }</a>`
                    }`;
 
         this.fragment.appendChild(project);
@@ -260,9 +253,8 @@ $(function () {
     },
 
     render: function () {
-      this.projectsList = this.projectsContainer.querySelectorAll(
-        "div.project"
-      );
+      this.projectsList =
+        this.projectsContainer.querySelectorAll("div.project");
       this.listLength = this.projectsList.length;
       let i;
 
